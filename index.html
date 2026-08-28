@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>학습 자료</title>
+<style>
+  :root{--bg:#12212f;--panel:#264564;--panel-dk:#17293b;--ink:#eaf4ff;--dim:#9fbdd8;
+    --line:#4c7ea9;--gold:#ffd24a;--bevel-lt:#5b90bd;--bevel-dk:#0f1f2d}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);padding:32px 20px 64px;
+    font:15px/1.6 "Pretendard","Apple SD Gothic Neo",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+  main{max-width:760px;margin:0 auto}
+  h1{font-size:26px;margin:0 0 4px}
+  .lede{color:var(--dim);font-size:13.5px;margin:0 0 28px}
+  h2{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);
+    margin:26px 0 8px}
+  ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+  a{display:flex;flex-direction:column;gap:3px;text-decoration:none;color:inherit;
+    background:var(--panel);border-radius:6px;padding:12px 14px;
+    border-top:2px solid var(--bevel-lt);border-left:2px solid var(--bevel-lt);
+    border-bottom:2px solid var(--bevel-dk);border-right:2px solid var(--bevel-dk)}
+  a:hover{filter:brightness(1.15)}
+  b{font-size:15.5px}
+  .meta{color:var(--dim);font-size:12px;font-variant-numeric:tabular-nums}
+  footer{color:var(--dim);font-size:12px;margin-top:34px;padding-top:14px;
+    border-top:1px solid var(--line)}
+  code{background:var(--panel-dk);padding:1px 5px;border-radius:4px;font-size:12.5px}
+</style>
+</head>
+<body>
+<main>
+  <h1>학습 자료</h1>
+  <p class="lede">브라우저에서 바로 열리는 시각적·인터랙티브 시뮬레이터. 읽는 문서가 아니라 손으로 만져 망가뜨려 보는 물건이다.</p>
+
+    <section>
+      <h2>architecture</h2>
+      <ul>
+        <li>
+          <a href="./architecture/clean-architecture/">
+            <b>클린 아키텍처 — 화살표를 안쪽으로</b>
+            <span class="meta">357 KB · clean-architecture</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>authz</h2>
+      <ul>
+        <li>
+          <a href="./authz/rebac-check-graph/">
+            <b>ReBAC 인가 — 권한을 그래프에 묻는다</b>
+            <span class="meta">358 KB · rebac-check-graph</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>backend</h2>
+      <ul>
+        <li>
+          <a href="./backend/cache-stampede/">
+            <b>캐시 스탬피드 · TTL 이 만료된 그 1초</b>
+            <span class="meta">중급 · 337 KB · cache-stampede</span>
+          </a>
+        </li>
+        <li>
+          <a href="./backend/rate-limiting/">
+            <b>초당 100 을 어떻게 세느냐 — 레이트 리미팅 알고리즘</b>
+            <span class="meta">353 KB · rate-limiting</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>cloud</h2>
+      <ul>
+        <li>
+          <a href="./cloud/aws-packet-path/">
+            <b>패킷 하나가 어디서 걸러지나 — SG · NACL · Network Firewall</b>
+            <span class="meta">초보 · 348 KB · aws-packet-path</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>craft</h2>
+      <ul>
+        <li>
+          <a href="./craft/clean-code/">
+            <b>클린 코드 — 읽는 사람의 머릿속</b>
+            <span class="meta">340 KB · clean-code</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>db</h2>
+      <ul>
+        <li>
+          <a href="./db/mvcc-mysql/">
+            <b>MySQL MVCC — 락 없이 읽는 법</b>
+            <span class="meta">340 KB · mvcc-mysql</span>
+          </a>
+        </li>
+        <li>
+          <a href="./db/mysql-lock/">
+            <b>MySQL 락 — 무엇이 어디를 얼마나 잠그나</b>
+            <span class="meta">중급 · 336 KB · mysql-lock</span>
+          </a>
+        </li>
+        <li>
+          <a href="./db/online-ddl/">
+            <b>ALTER TABLE 한 줄이 서비스를 멈춘 이유 — 메타데이터 락과 온라인 DDL</b>
+            <span class="meta">초보 · 332 KB · online-ddl</span>
+          </a>
+        </li>
+        <li>
+          <a href="./db/redis-atomicity/">
+            <b>Redis 02 · 명령 하나는 원자적이다, 그런데 둘은?</b>
+            <span class="meta">중급 · 301 KB · redis-atomicity</span>
+          </a>
+        </li>
+        <li>
+          <a href="./db/redis-cluster-slots/">
+            <b>Redis 08 · 키는 어느 노드로 가나</b>
+            <span class="meta">중급 · 343 KB · redis-cluster-slots</span>
+          </a>
+        </li>
+        <li>
+          <a href="./db/redis-encoding/">
+            <b>Redis 03 · 같은 해시인데 메모리가 10배 다르다</b>
+            <span class="meta">중급 · 319 KB · redis-encoding</span>
+          </a>
+        </li>
+        <li>
+          <a href="./db/redis-event-loop/">
+            <b>Redis 01 · 스레드 하나로 어떻게 빠른가</b>
+            <span class="meta">중급 · 326 KB · redis-event-loop</span>
+          </a>
+        </li>
+        <li>
+          <a href="./db/redis-failover/">
+            <b>Redis 07 · 마스터가 죽으면 누가 승격하나</b>
+            <span class="meta">중급 · 354 KB · redis-failover</span>
+          </a>
+        </li>
+        <li>
+          <a href="./db/redis-memory-eviction/">
+            <b>Redis 04 · maxmemory 에 닿는 순간</b>
+            <span class="meta">중급 · 321 KB · redis-memory-eviction</span>
+          </a>
+        </li>
+        <li>
+          <a href="./db/redis-persistence/">
+            <b>Redis 05 · 껐다 켜면 어디까지 남아 있나</b>
+            <span class="meta">중급 · 336 KB · redis-persistence</span>
+          </a>
+        </li>
+        <li>
+          <a href="./db/redis-replication/">
+            <b>Redis 06 · 복제본은 무엇을 잃는가</b>
+            <span class="meta">중급 · 368 KB · redis-replication</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>jvm</h2>
+      <ul>
+        <li>
+          <a href="./jvm/container-memory/">
+            <b>JVM · 컨테이너 한도 안에서 무엇이 얼마나</b>
+            <span class="meta">초보 · 353 KB · container-memory</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>k8s</h2>
+      <ul>
+        <li>
+          <a href="./k8s/docker-to-k8s/">
+            <b>도커에서 쿠버네티스로</b>
+            <span class="meta">초보 · 306 KB · docker-to-k8s</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>llm</h2>
+      <ul>
+        <li>
+          <a href="./llm/ai-fluency-4d/">
+            <b>AI 협업 · 4D 프레임워크</b>
+            <span class="meta">302 KB · ai-fluency-4d</span>
+          </a>
+        </li>
+        <li>
+          <a href="./llm/context-window/">
+            <b>LLM · 컨텍스트 윈도우의 예산</b>
+            <span class="meta">중급 · 351 KB · context-window</span>
+          </a>
+        </li>
+        <li>
+          <a href="./llm/prompt-injection/">
+            <b>LLM 01 · 데이터가 명령으로 승격되는 순간</b>
+            <span class="meta">초보 · 337 KB · prompt-injection</span>
+          </a>
+        </li>
+        <li>
+          <a href="./llm/prompting-lab/">
+            <b>LLM 03 · 프롬프트 실습실 — 같은 요청이 왜 다르게 돌아오나</b>
+            <span class="meta">초보 · 342 KB · prompting-lab</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>security</h2>
+      <ul>
+        <li>
+          <a href="./security/envelope-encryption/">
+            <b>보안 · 키를 암호화하는 키 — 봉투 암호화와 키 로테이션</b>
+            <span class="meta">왕초보 · 353 KB · envelope-encryption</span>
+          </a>
+        </li>
+        <li>
+          <a href="./security/session-revocation/">
+            <b>로그아웃했는데 토큰이 아직 산다 · 세션 취소와 전파</b>
+            <span class="meta">중급 · 376 KB · session-revocation</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  <footer>
+    자료 25개 · 이 사이트는 소스 레포의 빌드 산출물이다.
+    각 자료는 파일 하나라 내려받아 <code>file://</code> 로도 열린다.
+  </footer>
+</main>
+</body>
+</html>
